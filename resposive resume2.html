@@ -36,7 +36,7 @@ body{
 }
 .container .left_side{
     position: relative;
-    background: #06127c;
+    background: #141414;
     padding: 40px;
 }
 .profileText{
@@ -84,6 +84,16 @@ body{
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
+}
+.title-button{
+    background-color: dodgerblue;
+    border: 0;
+    border-radius: 2px;
+    padding:2px;
+    text-decoration: none;
+    color: white;
+    
+    
 }
 .contactInfo ul{
     position: relative;
@@ -137,7 +147,7 @@ body{
 
 .container .right_side{
     position: relative;
-    background: #fff;
+    background:moccasin;
     padding: 40px;
 }
 .about{
@@ -214,6 +224,14 @@ p{
     font-size: 18px;
     width: 20px;
 }
+.project{
+    text-decoration: none;
+    cursor:-moz-grab;
+    font-style: italic;
+}
+.download{
+    text-decoration: none;
+}
 
 @media (max-width: 1000px){
     .container{
@@ -246,7 +264,7 @@ p{
         <div class="left_side">
             <div class="profileText">
                 <div class="imgBx">
-                    <img src="./DSC_2562~2-01.jpeg"">
+                    <img src="./Myimage2.jpg">
                 </div>
                 <h2>AKASH MEHER<br> <span>Full Stack Developer</span></h2>
             </div>
@@ -321,11 +339,35 @@ p{
                     </li>
                 </ul>
             </div>
+            <div class="contactInfo education">
+               <a class="download" href="">
+
+                   <button onclick="window.print()" class="title-button">PRINT</button>
+                   <button class="title-button"><a class="title-button" href="https://drive.google.com/file/d/1gQpTb8MFD4ynmy45cNQrZKd3JU5m5Sd0/view?usp=sharing"> DOWNLOAD</a></button>
+               </a> 
+            </div>
 
         </div>
 
         <div class="right_side">
 
+            <div class="about">
+                <h2 class="title2">INTERNSHIP PROGRAM</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>11/2021-05/2022</h5>
+                        <h5>NEWTON SCHOOL</h5>
+                    </div>
+                    <div class="text">
+                        <h4>FULL STACK WEB DEVELOPMENT</h4>
+                        <p>HTML, CSS, JavaScript, ReactJS, DSA</p>
+                        <h5>PROJECTS</h5>
+                        <p><a class="project" href="">Google Homepage (HTML,CSS)</a></p>
+                        <p><a class="project" href="">Tip Calculator (HTML,CSS, javaScript)</a></p>
+                        <p><a class="project" href="https://6255cdf818aa8402c64c73a6--classy-crumble-7aee8e.netlify.app/">Movie Listing App (REACT JS)</a></p>
+                    </div>
+                </div>
+                </div>
             <div class="about">
                 <h2 class="title2">CERTIFICATIONS</h2>
                 <div class="box">
@@ -443,28 +485,22 @@ p{
                 <div class="box">
                     <h4>CSS</h4>
                     <div class="percent">
-                        <div style="width: 50%;"></div>
+                        <div style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="box">
                     <h4>Javascript</h4>
                     <div class="percent">
-                        <div style="width: 5%;"></div>
+                        <div style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="box">
                     <h4>React</h4>
                     <div class="percent">
-                        <div style="width: 5%;"></div>
+                        <div style="width: 70%;"></div>
                     </div>
                 </div>
-                <div class="box">
-                    <h4>Mongo DB</h4>
-                    <div class="percent">
-                        <div style="width: 5%;"></div>
-                    </div>
-                </div>
-                
+
             </div>
             <div class="about interest">
                 <h4 class="title2">Interests</h4>
@@ -479,6 +515,11 @@ p{
 
         </div>
     </div>
-    
+    <script>
+    const print=()=>{
+
+        document.getElementsByClassName('download').
+    }
+    </script>
 </body>
 </html>
